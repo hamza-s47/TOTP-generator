@@ -16,6 +16,7 @@ The generated TOTP is used as the password for HTTP Basic Authentication.
 
 
 ## Algorithm Summary
+```
 Current Time
    ↓
 Time Counter = floor((T - T0) / 30)
@@ -27,3 +28,4 @@ Dynamic Truncation (RFC 6238)
 Modulo 10¹⁰
    ↓
 10-digit TOTP
+```
